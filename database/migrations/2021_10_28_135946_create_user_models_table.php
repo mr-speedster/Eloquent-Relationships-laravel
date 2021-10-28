@@ -16,7 +16,7 @@ class CreateUserModelsTable extends Migration
         Schema::create('user_models', function (Blueprint $table) {
             $table->id();
             $table->string('name',100);
-            $table->
+            $table->string('post_name',100);
             $table->timestamps();
         });
     }
