@@ -15,17 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('form');
 });
 
-Route::get('/user',function(){
-    return view('userForm');
-});
-
-Route::get('/user',function(){
-    return view('postForm');
-});
-
-Route::post('/user',[UserPostController::class,'userData'])->name('userData');
-
-Route::post('/post',[UserPostController::class,'postData'])->name('postData');
+Route::post('/form',[UserPostController::class,'userPostData'])->name('form');
