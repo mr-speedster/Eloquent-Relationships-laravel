@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserPostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,4 +26,6 @@ Route::get('/user',function(){
     return view('postForm');
 });
 
-Route::post('/user',[]);
+Route::post('/user',[UserPostController::class,'userData'])->name('userData');
+
+Route::post('/user',[UserPostController::class,'userData'])->name('userData');
