@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Relations</title>
+    <style>
+        div{
+            width: 600px;
+            height: 800px;
+            background: cyan;
+        }
+        form{
+            width: 500px;
+            height: 600px;
+            margin: 20px;
+            background: rgb(255, 1, 234);
+        }
+        input{
+            font-size: 12px;
+            padding: 2px;
+            margin: 10px; 
+        }
+    </style>
 </head>
 <body>
     <div>
