@@ -10,4 +10,9 @@ class UserPostController extends Controller
     {
         
     }
+
+    public function postData(Request $request)
+    {
+        
+    }
 }

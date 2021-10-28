@@ -28,4 +28,4 @@ Route::get('/user',function(){
 
 Route::post('/user',[UserPostController::class,'userData'])->name('userData');
 
-Route::post('/user',[UserPostController::class,'userData'])->name('userData');
+Route::post('/post',[UserPostController::class,'postData'])->name('postData');
