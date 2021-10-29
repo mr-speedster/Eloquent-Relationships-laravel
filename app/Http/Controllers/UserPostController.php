@@ -19,7 +19,7 @@ class UserPostController extends Controller
         $users->save();
     }
 
-    /*public function postData(Request $request)
+    public function postData(Request $request)
     {
         $userId=$request->post('user_name');
         $postName=$request->post('post_name');
@@ -32,5 +32,5 @@ class UserPostController extends Controller
         $posts->post_id=$userId;
         $posts->post_name=$postName;
         $users->save();
-    }*/
+    }
 }
