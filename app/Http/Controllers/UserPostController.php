@@ -13,21 +13,10 @@ class UserPostController extends Controller
     {
         $userName=$request->post('user_name');
         $postName=$request->post('post_name');
-        
         $users=new UserModel();
-
-        $users->user_name=$userName;
+        $users->name=$userName;
         $users->post_name=$postName;
         $users->save();
-
-        $posts=new PostModel();
-
-        $posts->user_id=UserModel::where('post_name',$postName);
-        $post_disc=$request->post('post_disc');
-        $posts->post_name=$request->post('post_name');
-        $posts->post_name=$postName;
-        $users->save();
-
     }
 
     /*public function postData(Request $request)
